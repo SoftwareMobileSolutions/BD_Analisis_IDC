@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Analisis_IDC", "Analisis_IDC\Analisis_IDC.sqlproj", "{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A543E02-71E6-4ECC-A43C-14A53EDEE5D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ED79F96-0399-4122-897E-5861D4A2D988}
+	EndGlobalSection
+EndGlobal

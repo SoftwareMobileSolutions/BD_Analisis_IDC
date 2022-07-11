@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Analisis_IDC</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{6a543e02-71e6-4ecc-a43c-14a53edee5d2}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Analisis_IDC</RootNamespace>
+    <AssemblyName>Analisis_IDC</AssemblyName>
+    <ModelCollation>3082,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Modern_Spanish_CI_AI</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Indicadores_Tipo.sql" />
+    <Build Include="dbo\Tables\Indicadores.sql" />
+    <Build Include="dbo\Tables\Indicadores_Summary__Today.sql" />
+    <Build Include="dbo\Tables\Indicadores_Summary.sql" />
+    <Build Include="dbo\Tables\Summary_UnidadesSinTX.sql" />
+    <Build Include="dbo\Tables\webapirest_route.sql" />
+    <Build Include="dbo\Tables\user_webapi.sql" />
+    <Build Include="dbo\Tables\webapirest_route_operaciones.sql" />
+    <Build Include="dbo\Tables\LaReynaLog_Subflota.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_Estados.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_Protocolos.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_Categoria.sql" />
+    <Build Include="dbo\Tables\comm.sql" />
+    <Build Include="dbo\Tables\puertos_lastreport.sql" />
+    <Build Include="dbo\Tables\puertos_summary.sql" />
+    <Build Include="dbo\Tables\puertos.sql" />
+    <Build Include="dbo\Tables\servidor.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_Actividades.sql" />
+    <Build Include="dbo\Tables\base.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_Registros.sql" />
+    <Build Include="dbo\Tables\SMSTools_CM_LogRegistros.sql" />
+    <Build Include="dbo\Tables\puertos_detalle.sql" />
+    <Build Include="dbo\Tables\Points_TRULY.sql" />
+    <Build Include="dbo\Tables\jobs.sql" />
+    <Build Include="dbo\Tables\ReportesServer.sql" />
+    <Build Include="dbo\Tables\Summary_UnidadesSinTX_Diaria.sql" />
+    <Build Include="dbo\Tables\prub.sql" />
+    <Build Include="dbo\Tables\prub_log.sql" />
+    <Build Include="dbo\Tables\paradasMartinez.sql" />
+    <Build Include="dbo\Tables\TRULYNOLEN.sql" />
+    <Build Include="dbo\Tables\jobs_summary.sql" />
+    <Build Include="dbo\Tables\jobs_today.sql" />
+    <Build Include="dbo\Functions\fn_formatoHoraMS.sql" />
+    <Build Include="dbo\Stored Procedures\fleet_webapirest_route.sql" />
+    <Build Include="dbo\Stored Procedures\Summary_Indicadores.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Summary_UnidadesSinTX.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerSummaryNoTx.sql" />
+    <Build Include="dbo\Stored Procedures\webapirest_execqueries.sql" />
+    <Build Include="dbo\Stored Procedures\webapirest_getUserAccess.sql" />
+    <Build Include="dbo\Stored Procedures\SP_ObtenerVehiculos.sql" />
+    <Build Include="dbo\Stored Procedures\ReporteTotalizadorCBCConsilidado.sql" />
+    <Build Include="dbo\Stored Procedures\ReporteTotalizadorCBCConsilidadoLogic.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerSummaryJobs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_CM_InsertarEstados.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_CM_InsertarProtocolos.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_CM_InsertarCategorias.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Summary_Puertos.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_CM_InsertarActividades.sql" />
+    <Build Include="dbo\Stored Procedures\ConteoPuertosIDC.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_CM_InsertarRegistros.sql" />
+    <Build Include="dbo\Stored Procedures\puertosIDC.sql" />
+    <Build Include="dbo\Stored Procedures\puertosDetalle.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerSummaryReportes.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerSummaryPuertos.sql" />
+    <Build Include="dbo\Stored Procedures\pruebaIDCreplace.sql" />
+    <Build Include="dbo\Stored Procedures\usuariosUtilerias.sql" />
+    <Build Include="dbo\Stored Procedures\migrarDeviceex.sql" />
+    <Build Include="dbo\Stored Procedures\SP_SMSTools_AdminSMS.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerSummaryBitacora.sql" />
+    <Build Include="dbo\Stored Procedures\insertRpteServer.sql" />
+    <Build Include="dbo\Stored Procedures\check_jobs.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Reporte_ConsumoIDC.sql" />
+    <Build Include="dbo\Stored Procedures\SP_Summary_UnidadesSinTX_diario.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerJamming.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerJammingMartinez.sql" />
+    <Build Include="dbo\Stored Procedures\Fleets_GraficosDiarios_ObtenerNoTX_TPlan_TipoEstado_AES_IDC2.sql" />
+    <Build Include="dbo\Stored Procedures\Fleets_GraficosDiarios_ObtenerNoTX_TPlan_TipoEstado_AES_IDC3.sql" />
+    <Build Include="dbo\Stored Procedures\migrarDeviceex_Bluefenyx.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerJammingMartinezParadas.sql" />
+    <Build Include="dbo\Stored Procedures\BI_ObtenerJammingO2.sql" />
+    <Build Include="dbo\Stored Procedures\Summary_Jobs.sql" />
+  </ItemGroup>
+</Project>
