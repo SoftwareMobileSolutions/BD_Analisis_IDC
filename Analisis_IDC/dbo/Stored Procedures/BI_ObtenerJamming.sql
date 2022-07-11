@@ -3,6 +3,8 @@
 Armando Villavicencio
 2022 - 05 - 03 
 Obtencion de reportes para Power BI
+
+---- prueba de comentario para github
 ===========================================================================
 */
 CREATE PROCEDURE [dbo].[BI_ObtenerJamming]
