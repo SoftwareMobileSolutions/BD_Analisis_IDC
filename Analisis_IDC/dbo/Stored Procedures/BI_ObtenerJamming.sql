@@ -5,6 +5,7 @@ Armando Villavicencio
 Obtencion de reportes para Power BI
 
 ---- prueba de comentario para github
+-- prueba de bd con fernando
 ===========================================================================
 */
 CREATE PROCEDURE [dbo].[BI_ObtenerJamming]
